@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="result.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>returnResults</title>
+    <script type="text/javascript">
+    window.onload=function(){
+    var data=data.data;
+    var dataobj=data.JSON;
+       for(var i=0;i<data.length;i++){
+        $("#mainlist").append(
+            "<div class='line-1' id='title'><h1><a herf="+data.url
+                +">"+data.title
+                +"</a></h1><p class='line-2'>"+data.url+"</p></div>"
+            )
+       }
+    }
+
+    
+    </script>
+</head>
+<body>
+    <!-- <div class="line-1" id="title"> -->
+        <!-- <h1> -->
+            <!-- <a href="">Title</a> -->
+        <!-- </h1> -->
+        <!-- <p class="line-2">url:www.123.com</p> -->
+    <!-- </div> -->
+</body>
+</html>

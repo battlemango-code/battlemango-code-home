@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Search_style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>红色网站搜索框</title>
+</head>
+
+<body>
+    <div class="search-box">
+        <input class="search-txt" type="text" name="" placeholder="输入想要搜索的关键字">
+        <a class="search-btn" onclick="getInputVal()">
+            <i class=" fas fa-search "></i>
+        </a>
+    </div>
+    <script language="JavaScript">
+        function returnResults(str) {
+            //根据搜索算法弹出相应窗口
+            window.location.href='https://';
+
+        }
+
+        function getInputVal() {
+            const inputBox = document.querySelectorAll('.search-txt')[0];
+            // 获取input输入框中的值
+            let inputVal = inputBox.value;
+            if (inputVal) {
+                returnResults(inputVal);
+            } else {
+                alert('请在输入框中填点东西QAQ');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

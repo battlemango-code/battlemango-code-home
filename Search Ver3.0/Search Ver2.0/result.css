@@ -1,0 +1,6 @@
+.line-1{
+    box-sizing: border-box;
+}
+.line-2{
+    box-sizing: content-box;
+}
